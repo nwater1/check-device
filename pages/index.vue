@@ -32,7 +32,7 @@ export default {
 
 
   mounted () {
-    this.chooseDevice
+    this.chooseDevice()
   },
 
   methods: {
