@@ -30,19 +30,19 @@
 <script>
 export default {
 
+
   mounted () {
-    this.chooseDevice ()
+    this.chooseDevice
   },
 
   methods: {
     chooseDevice () {
       if ((this.url === 'smartphone' && this.deviceType === 'iPhone') || (this.url === 'smartphone' && this.deviceType === 'iPad')) {
-        return 'www.gmail.com'
+        window.location.href = 'www.google.com';
       } if (this.url === 'pc') {
         return 'https://page.line.me/?accountId=002sjkcf&openerPlatform=native&openerKey=talkroom:header'
       } if (this.url === 'smartphone' && this.deviceType === 'Android') {
-        return 'www.google.com'
-      }
+        window.location.href = 'www.google.com';
     }
   }
 }
