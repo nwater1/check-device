@@ -50,7 +50,7 @@ export default {
       } if (this.url === 'pc') {
         return 'https://page.line.me/?accountId=002sjkcf&openerPlatform=native&openerKey=talkroom:header'
       } if (this.url === 'smartphone' && this.deviceType === 'Android') {
-        window.location.href = 'https://www.google.com';
+        window.location.href = 'https://liff.line.me/1656023598-jbmRQA1P';
     }
   }
 }
