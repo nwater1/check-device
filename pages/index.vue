@@ -30,8 +30,8 @@
 <script>
 export default {
 
-  async created () {
-    await chooseDevice ()
+  mounted () {
+    this.chooseDevice ()
   },
 
   methods: {
