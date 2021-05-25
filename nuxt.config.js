@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'check-device',
+    title: 'ลงชื่อ เพื่อร่วมเป็น 1 ในผู้สถาปนา วันวิสาขบูชาโลกออนไลน์ ครั้งที่ 1',
     htmlAttrs: {
       lang: 'en'
     },
