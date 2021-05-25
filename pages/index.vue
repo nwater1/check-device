@@ -30,8 +30,8 @@
 <script>
 export default {
 
-  async mounted () {
-    inappcheck ()
+  async created () {
+    await inappcheck ()
   },
 
   methods: {
