@@ -29,9 +29,17 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      alink: true,
+      url: '',
+      deviceType: ''
+    }
+  },
 
   mounted () {
+    this.url = this.$ua.deviceType()
+    this.deviceType = this.$ua.os()
     this.chooseDevice()
   },
 
