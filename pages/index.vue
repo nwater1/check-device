@@ -38,11 +38,11 @@ export default {
   methods: {
     chooseDevice () {
       if ((this.url === 'smartphone' && this.deviceType === 'iPhone') || (this.url === 'smartphone' && this.deviceType === 'iPad')) {
-        window.location.href = 'www.google.com';
+        window.location = 'www.google.com';
       } if (this.url === 'pc') {
         return 'https://page.line.me/?accountId=002sjkcf&openerPlatform=native&openerKey=talkroom:header'
       } if (this.url === 'smartphone' && this.deviceType === 'Android') {
-        window.location.href = 'www.google.com';
+        window.location = 'www.google.com';
     }
   }
 }
