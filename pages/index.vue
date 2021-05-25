@@ -46,9 +46,9 @@ export default {
   methods: {
     chooseDevice () {
       if ((this.url === 'smartphone' && this.deviceType === 'iPhone') || (this.url === 'smartphone' && this.deviceType === 'iPad')) {
-        window.location.href = 'https://www.google.com';
+        window.location.href = 'https://liff.line.me/1656026908-31A2jyx9';
       } if (this.url === 'pc') {
-        return 'https://page.line.me/?accountId=002sjkcf&openerPlatform=native&openerKey=talkroom:header'
+        return 'https://liff.line.me/1656023598-jbmRQA1P'
       } if (this.url === 'smartphone' && this.deviceType === 'Android') {
         window.location.href = 'https://liff.line.me/1656023598-jbmRQA1P';
     }
