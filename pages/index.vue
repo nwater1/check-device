@@ -31,40 +31,19 @@
 export default {
 
   async created () {
-    await inappcheck ()
+    await chooseDevice ()
   },
 
   methods: {
-    inappcheck () {
-        // const path = 'github.com/donma/'
-        const path = 'www.google.com'
-        // https://line.me/ti/p/~@dhamma1000000
-        // https://lin.ee/Jqdw87d
-
-        // 如果是 LINE
-        // if (navigator.userAgent.includes('Line')) {
-        //  location.href = 'https://' + path + '?' + 'openExternalBrowser=1'
-        // eslint-disable-next-line brace-style
-        // }
-
-        // 如果是 facebook
-        //if (navigator.userAgent.includes('FBAV') || navigator.userAgent.includes('FBAN')) {
-          // 如果是 Android App
-          if (navigator.userAgent.includes('Android')) {
-            location.href = 'intent:https://' + path + '#Intent;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;component=com.android.browser/com.android.browser.BrowserActivity;end'
-            setTimeout(function () {
-              location.href = 'intent:https://' + path + '#Intent;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;component=com.android.browser/com.android.browser.BrowserActivity;end'
-            }, 500)
-            // 如果是 IOS APP
-          } else if (navigator.platform.match(/iPhone|iPod|iPad/)) {
-            document.write('safari or Chrome')
-            // location.href = 'googlechromes://' + path
-          // location.href = 'safari-https://' + path
-          } else {
-            location.href = 'https://' + 'www.gmail.com'
-          }
-        //}
+    chooseDevice () {
+      if ((this.url === 'smartphone' && this.deviceType === 'iPhone') || (this.url === 'smartphone' && this.deviceType === 'iPad')) {
+        return 'www.gmail.com'
+      } if (this.url === 'pc') {
+        return 'https://page.line.me/?accountId=002sjkcf&openerPlatform=native&openerKey=talkroom:header'
+      } if (this.url === 'smartphone' && this.deviceType === 'Android') {
+        return 'www.google.com'
       }
+    }
   }
 }
 </script>
